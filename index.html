@@ -31,7 +31,7 @@
 <section id="home" class="hero">
     <div class="container hero-content">
         <div class="hero-text">
-            <h1>Привіт, я Демченко Денис Миколайович </h1>
+            <h1>Привіт, я Демченко Денис Миколайович</h1>
             <p>Студент спеціальності 122 «Комп'ютерні науки»</p>
             <p>Вивчаю веб-розробку та програмування</p>
             <a href="#contact" class="btn">Зв'язатися</a>
@@ -64,6 +64,28 @@
     <div class="container">
         <h1>Контакти</h1>
         <p>Email: example@email.com</p>
+
+        <form name="contact" method="POST" data-netlify="true"
+              class="contact-form" id="contactForm">
+
+            <input type="hidden" name="form-name" value="contact">
+
+            <label>Ім'я:<br>
+                <input type="text" name="name" required>
+            </label><br><br>
+
+            <label>Email:<br>
+                <input type="email" name="email" required>
+            </label><br><br>
+
+            <label>Повідомлення:<br>
+                <textarea name="message" rows="5" required></textarea>
+            </label><br><br>
+
+            <button type="submit" class="btn">Надіслати</button>
+
+        </form>
+
     </div>
 </section>
 
